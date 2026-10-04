@@ -1,0 +1,1946 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #0f3d5e;
+  color: white;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 42px;
+}
+
+.header h1 {
+  font-size: 28px;
+}
+
+.header p {
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Main */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+/* Welcome */
+
+.welcome {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  margin-bottom: 35px;
+}
+
+.welcome h2 {
+  color: #0f3d5e;
+  margin-bottom: 12px;
+}
+
+.welcome p {
+  line-height: 1.6;
+}
+
+/* Section */
+
+.section-title {
+  margin-bottom: 20px;
+  color: #0f3d5e;
+}
+
+/* Cards */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 38px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  color: #0f3d5e;
+}
+
+.card p {
+  line-height: 1.5;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.card button {
+  border: none;
+  background: #0f3d5e;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #17618f;
+}
+
+/* Emergency */
+
+.emergency {
+  border: 2px solid #e8a000;
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+  background: #0f3d5e;
+  color: white;
+}
+
+/* Tablet */
+
+@media (max-width: 800px) {
+  .features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .header {
+    padding: 18px 5%;
+  }
+
+  .container {
+    width: 92%;
+  }
+} 
+
+/* =================================
+   SECURITY TIPS PAGE
+================================= */
+
+.tips-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+
+/* Header */
+
+.tips-page h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Introduction */
+
+.tips-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+
+/* Tips List */
+
+.tips-list {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* Individual Tip */
+
+.tips-list p {
+  padding: 18px 22px;
+
+  margin: 0;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  line-height: 1.6;
+
+  color: #1f2937;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.tips-list p:last-child {
+  border-bottom: none;
+}
+
+.tips-list p:hover {
+  background: #f4f7fb;
+}
+
+
+/* Back Button */
+
+.tips-page button {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.tips-page button:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .tips-page h1 {
+    padding: 20px 5%;
+
+    font-size: 22px;
+  }
+
+  .tips-page > p {
+    width: 92%;
+
+    margin: 20px auto;
+
+    padding: 18px;
+  }
+
+  .tips-list {
+    width: 92%;
+
+    margin: 15px auto;
+  }
+
+  .tips-list p {
+    padding: 16px;
+
+    font-size: 14px;
+  }
+
+}
+
+/* =================================
+   CHECK SUSPICIOUS LINK PAGE
+================================= */
+
+.link-checker-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+/* Header */
+
+.link-checker-page h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+
+.link-checker-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Link Checker Card */
+
+.link-checker-card {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.link-checker-card h2 {
+  margin-bottom: 20px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+/* Input */
+
+.link-checker-card input {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  margin-bottom: 15px;
+}
+
+.link-checker-card input:focus {
+  border-color: #0f3d5e;
+}
+
+/* Check Link Button */
+
+.link-checker-card button {
+  display: block;
+
+  margin: 0 auto;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.link-checker-card button:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Result */
+
+.link-result {
+  margin: 20px 0 0;
+
+  padding: 15px;
+
+  background: #f4f7fb;
+
+  border-radius: 8px;
+
+  color: #1f2937;
+
+  line-height: 1.6;
+
+  text-align: center;
+}
+
+/* Back to Dashboard */
+
+.link-checker-page > .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.link-checker-page > .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .link-checker-page h1 {
+    padding: 20px 5%;
+    font-size: 22px;
+  }
+
+  .link-checker-page > p {
+    width: 92%;
+    margin: 20px auto;
+    padding: 18px;
+  }
+
+  .link-checker-card {
+    width: 92%;
+    margin: 15px auto;
+    padding: 18px;
+  }
+
+}
+
+
+/* =================================
+   PASSWORD SECURITY PAGE
+================================= */
+
+.password-checker-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+/* Header */
+
+.password-checker-page h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+
+.password-checker-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Password Card */
+
+.password-checker-card {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.password-checker-card h2 {
+  margin-bottom: 20px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+/* Password Input */
+
+.password-checker-card input {
+  width: 100%;
+
+  padding: 12px 14px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 8px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  margin-bottom: 15px;
+}
+
+.password-checker-card input:focus {
+  border-color: #0f3d5e;
+}
+
+/* Check Password Button */
+
+.password-checker-card button {
+  display: block;
+
+  margin: 0 auto;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.password-checker-card button:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Back to Dashboard */
+
+.password-checker-page > .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.password-checker-page > .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .password-checker-page h1 {
+    padding: 20px 5%;
+    font-size: 22px;
+  }
+
+  .password-checker-page > p {
+    width: 92%;
+    margin: 20px auto;
+    padding: 18px;
+  }
+
+  .password-checker-card {
+    width: 92%;
+    margin: 15px auto;
+    padding: 18px;
+  }
+
+}
+/* =================================
+   EMERGENCY HELP PAGE
+================================= */
+
+.emergency-help-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+/* Header */
+
+.emergency-help-page > h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+
+.emergency-help-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Main Content */
+
+.emergency-main {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+}
+
+/* Common Cards */
+
+.helpline-section,
+.cybercrime-section,
+.victim-section,
+.emergency-reminder {
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  margin-bottom: 20px;
+
+  padding: 25px;
+}
+
+/* Helpline */
+
+.helpline-section {
+  text-align: center;
+}
+
+.emergency-phone-icon {
+  font-size: 40px;
+
+  margin-bottom: 10px;
+}
+
+.helpline-section h2 {
+  color: #0f3d5e;
+
+  margin: 5px 0;
+
+  font-size: 21px;
+}
+
+.helpline-number {
+  color: #0f3d5e;
+
+  font-size: 32px;
+
+  font-weight: bold;
+
+  margin: 15px 0;
+}
+
+/* Call Button */
+
+.call-button {
+  display: inline-block;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.call-button:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Cyber Crime */
+
+.cybercrime-section {
+  text-align: center;
+}
+
+.cybercrime-section h2 {
+  color: #0f3d5e;
+
+  margin-bottom: 10px;
+
+  font-size: 20px;
+}
+
+.cybercrime-section p {
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 15px;
+}
+
+/* Report Button */
+
+.report-button {
+  display: inline-block;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  text-decoration: none;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.report-button:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+.website-name {
+  margin-top: 12px;
+
+  margin-bottom: 0 !important;
+
+  font-size: 14px;
+
+  color: #777 !important;
+}
+
+/* Victim Section */
+
+.victim-section h2 {
+  color: #0f3d5e;
+
+  margin-bottom: 15px;
+
+  font-size: 20px;
+}
+
+.victim-step {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 10px;
+
+  padding: 12px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.victim-step:last-child {
+  border-bottom: none;
+}
+
+.victim-step span {
+  color: #0f3d5e;
+
+  font-size: 18px;
+
+  font-weight: bold;
+}
+
+.victim-step p {
+  margin: 0;
+
+  color: #1f2937;
+
+  line-height: 1.5;
+}
+
+/* Safety Reminder */
+
+.emergency-reminder {
+  color: #1f2937;
+
+  line-height: 1.6;
+
+  font-weight: 500;
+}
+
+/* Back to Dashboard */
+
+.emergency-help-page > .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.emergency-help-page > .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .emergency-help-page > h1 {
+    padding: 20px 5%;
+
+    font-size: 22px;
+  }
+
+  .emergency-help-page > p {
+    width: 92%;
+
+    margin: 20px auto;
+
+    padding: 18px;
+  }
+
+  .emergency-main {
+    width: 92%;
+
+    margin: 15px auto;
+  }
+
+  .helpline-section,
+  .cybercrime-section,
+  .victim-section,
+  .emergency-reminder {
+    padding: 18px;
+  }
+
+  .helpline-number {
+    font-size: 28px;
+  }
+
+}
+
+/* =================================
+   SECURITY RISK SCANNER PAGE
+================================= */
+
+.risk-scanner-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+/* Header */
+
+.risk-scanner-page > h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+
+.risk-scanner-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Main Scanner Card */
+
+.risk-scanner-card {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.risk-scanner-card h2 {
+  margin-bottom: 10px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+.risk-scanner-card > p {
+  color: #555;
+
+  line-height: 1.6;
+
+  margin-bottom: 20px;
+}
+
+/* Questions */
+
+.risk-question {
+  padding: 18px 0;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.risk-question:last-child {
+  border-bottom: none;
+}
+
+.risk-question > p {
+  margin: 0 0 12px;
+
+  color: #1f2937;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+/* Yes / No Buttons */
+
+.risk-options {
+  display: flex;
+
+  gap: 10px;
+}
+
+.risk-option {
+  border: 1px solid #0f3d5e;
+
+  background: white;
+
+  color: #0f3d5e;
+
+  padding: 8px 20px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+
+  transition: 0.2s;
+}
+
+.risk-option:hover {
+  background: #f4f7fb;
+}
+
+.risk-option.selected {
+  background: #0f3d5e;
+
+  color: white;
+}
+
+/* Scan Button */
+
+.scan-risk-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.scan-risk-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+.scan-risk-btn:disabled {
+  background: #9ca3af;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+/* Risk Result */
+
+.risk-result-card {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  padding: 22px 25px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.risk-result-icon {
+  font-size: 38px;
+
+  flex-shrink: 0;
+}
+
+.risk-result-card h2 {
+  margin: 0 0 10px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+.risk-result-card h3 {
+  margin: 6px 0;
+
+  color: #1f2937;
+
+  font-size: 16px;
+}
+
+.risk-result-card p {
+  margin-top: 12px;
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Recommended Actions */
+
+.risk-recommendations {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  padding: 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.risk-recommendations h2 {
+  margin-bottom: 15px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+.risk-recommendations ul {
+  margin: 0;
+
+  padding-left: 22px;
+}
+
+.risk-recommendations li {
+  padding: 8px 0;
+
+  color: #1f2937;
+
+  line-height: 1.5;
+}
+
+/* Back to Dashboard */
+
+.risk-scanner-page > .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.risk-scanner-page > .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .risk-scanner-page > h1 {
+    padding: 20px 5%;
+
+    font-size: 22px;
+  }
+
+  .risk-scanner-page > p {
+    width: 92%;
+
+    margin: 20px auto;
+
+    padding: 18px;
+  }
+
+  .risk-scanner-card {
+    width: 92%;
+
+    margin: 15px auto;
+
+    padding: 18px;
+  }
+
+  .risk-question {
+    padding: 16px 0;
+  }
+
+  .risk-question > p {
+    font-size: 14px;
+  }
+
+  .risk-option {
+    padding: 8px 18px;
+  }
+
+  .risk-result-card {
+    width: 92%;
+
+    padding: 18px;
+
+    gap: 12px;
+  }
+
+  .risk-result-icon {
+    font-size: 30px;
+  }
+
+  .risk-recommendations {
+    width: 92%;
+
+    padding: 18px;
+  }
+
+}
+
+/* =================================
+   SECURITY CHECKLIST PAGE
+================================= */
+
+.checklist-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+/* Header */
+
+.checklist-page > h1 {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  font-size: 26px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Introduction */
+
+.checklist-page > p {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Checklist Card */
+
+.checklist-content {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+.checklist-content h2 {
+  padding: 20px 22px;
+
+  margin: 0;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Checklist Item */
+
+.checklist-item {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding: 18px 22px;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  transition: 0.2s;
+}
+
+.checklist-item:last-child {
+  border-bottom: none;
+}
+
+.checklist-item:hover {
+  background: #f4f7fb;
+}
+
+.checklist-item input {
+  width: 18px;
+  height: 18px;
+
+  cursor: pointer;
+
+  accent-color: #0f3d5e;
+}
+
+.checklist-item span {
+  font-size: 15px;
+
+  color: #1f2937;
+
+  line-height: 1.5;
+
+  cursor: pointer;
+}
+
+/* Security Result */
+
+.security-result {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  padding: 22px 25px;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+}
+
+.result-icon {
+  font-size: 35px;
+
+  flex-shrink: 0;
+}
+
+.security-result h2 {
+  margin: 0 0 8px;
+
+  color: #0f3d5e;
+
+  font-size: 20px;
+}
+
+.security-result p {
+  margin: 0;
+
+  color: #555;
+
+  line-height: 1.6;
+}
+
+/* Back to Dashboard */
+
+.checklist-page > .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.checklist-page > .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .checklist-page > h1 {
+    padding: 20px 5%;
+
+    font-size: 22px;
+  }
+
+  .checklist-page > p {
+    width: 92%;
+
+    margin: 20px auto;
+
+    padding: 18px;
+  }
+
+  .checklist-content {
+    width: 92%;
+
+    margin: 15px auto;
+  }
+
+  .checklist-content h2 {
+    padding: 18px;
+  }
+
+  .checklist-item {
+    padding: 16px;
+  }
+
+  .checklist-item span {
+    font-size: 14px;
+  }
+
+  .security-result {
+    width: 92%;
+
+    padding: 18px;
+
+    gap: 12px;
+  }
+
+  .result-icon {
+    font-size: 30px;
+  }
+
+}
+
+
+/* =================================
+   FRAUD AWARENESS PAGE
+================================= */
+
+.fraud-awareness-page {
+  min-height: 100vh;
+  background: #f4f7fb;
+  color: #1f2937;
+  padding-bottom: 40px;
+}
+
+
+/* Header */
+
+.fraud-top {
+  background: #0f3d5e;
+  color: white;
+
+  padding: 22px 8%;
+
+  margin: 0;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.fraud-top h1 {
+  margin: 0 0 8px;
+
+  font-size: 26px;
+  color: white;
+}
+
+.fraud-top p {
+  margin: 0;
+
+  font-size: 15px;
+  line-height: 1.6;
+
+  color: #e5edf3;
+}
+
+
+/* Safety Warning */
+
+.fraud-warning {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 30px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  border-left: 5px solid #0f3d5e;
+}
+
+.fraud-warning > span {
+  font-size: 32px;
+}
+
+.fraud-warning h2 {
+  margin: 0 0 6px;
+
+  font-size: 20px;
+
+  color: #0f3d5e;
+}
+
+.fraud-warning p {
+  margin: 0;
+
+  color: #555;
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* Section Title */
+
+.section-title {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 28px auto 15px;
+
+  font-size: 21px;
+
+  color: #0f3d5e;
+}
+
+
+/* Fraud List */
+
+.fraud-list {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 20px auto;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  overflow: hidden;
+}
+
+
+/* Individual Fraud */
+
+.fraud-item {
+  display: flex;
+  align-items: flex-start;
+
+  gap: 18px;
+
+  padding: 20px 22px;
+
+  margin: 0;
+
+  border-bottom: 1px solid #e5e7eb;
+
+  background: white;
+
+  transition: 0.2s;
+}
+
+.fraud-item:last-child {
+  border-bottom: none;
+}
+
+.fraud-item:hover {
+  background: #f4f7fb;
+}
+
+
+/* Icon */
+
+.fraud-icon {
+  width: 45px;
+  min-width: 45px;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: #f4f7fb;
+
+  border-radius: 10px;
+
+  font-size: 24px;
+}
+
+
+/* Fraud Heading */
+
+.fraud-item h3 {
+  margin: 0 0 7px;
+
+  font-size: 17px;
+
+  color: #0f3d5e;
+}
+
+
+/* Fraud Explanation */
+
+.fraud-item p {
+  margin: 0;
+
+  color: #555;
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* Action Box */
+
+.fraud-action {
+  width: 90%;
+  max-width: 1000px;
+
+  margin: 25px auto 20px;
+
+  background: white;
+
+  padding: 22px 25px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+
+  border-left: 5px solid #0f3d5e;
+}
+
+.fraud-action h2 {
+  margin: 0 0 8px;
+
+  font-size: 19px;
+
+  color: #0f3d5e;
+}
+
+.fraud-action p {
+  margin: 0;
+
+  color: #555;
+
+  line-height: 1.6;
+
+  font-size: 15px;
+}
+
+
+/* Back Button */
+
+.fraud-awareness-page .back-dashboard-btn {
+  display: block;
+
+  margin: 25px auto 0;
+
+  border: none;
+
+  background: #0f3d5e;
+
+  color: white;
+
+  padding: 12px 22px;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+
+  font-size: 15px;
+
+  transition: 0.2s;
+}
+
+.fraud-awareness-page .back-dashboard-btn:hover {
+  background: #17618f;
+
+  transform: translateY(-1px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 550px) {
+
+  .fraud-top {
+    padding: 20px 5%;
+  }
+
+  .fraud-top h1 {
+    font-size: 22px;
+  }
+
+  .fraud-top p {
+    font-size: 14px;
+  }
+
+  .fraud-warning {
+    width: 92%;
+
+    margin: 20px auto;
+
+    padding: 18px;
+
+    gap: 12px;
+  }
+
+  .fraud-warning > span {
+    font-size: 27px;
+  }
+
+  .fraud-warning h2 {
+    font-size: 18px;
+  }
+
+  .fraud-warning p {
+    font-size: 14px;
+  }
+
+  .section-title {
+    width: 92%;
+
+    font-size: 19px;
+
+    margin-top: 25px;
+  }
+
+  .fraud-list {
+    width: 92%;
+
+    margin: 15px auto;
+  }
+
+  .fraud-item {
+    padding: 16px;
+
+    gap: 12px;
+  }
+
+  .fraud-icon {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+
+    font-size: 21px;
+  }
+
+  .fraud-item h3 {
+    font-size: 16px;
+  }
+
+  .fraud-item p {
+    font-size: 14px;
+  }
+
+  .fraud-action {
+    width: 92%;
+
+    padding: 18px;
+
+    margin: 20px auto;
+  }
+
+  .fraud-action h2 {
+    font-size: 18px;
+  }
+
+  .fraud-action p {
+    font-size: 14px;
+  }
+
+}
