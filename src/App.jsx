@@ -1,10 +1,14 @@
 import { useState } from "react";
 import "./App.css";
 import SplashScreen from "./SplashScreen";
+import Login from "./Login";
 import ScamAlerts from "./ScamAlerts";
 
 function App() {
   const [showSplash, setShowSplash] = useState(true);
+  const [showLogin, setShowLogin] = useState(false);
+  const [userType, setUserType] = useState("");
+  const [showRegisteredUsers, setShowRegisteredUsers] = useState(false);
   const [showTips, setShowTips] = useState(false);
   const [showScamAlerts, setShowScamAlerts] = useState(false);
   const [showLinkChecker, setShowLinkChecker] = useState(false);
@@ -35,6 +39,7 @@ const [riskLevel, setRiskLevel] = useState("");
 
   const handleStart = () => {
     setShowSplash(false);
+    setShowLogin(true);
   };
 
   const checkLink = () => {
@@ -81,6 +86,74 @@ const checkPassword = () => {
   if (showSplash) {
     return <SplashScreen onStart={handleStart} />;
   }
+
+   if (showLogin) {
+  return (
+    <Login
+      onLogin={(type) => {
+        setUserType(type);
+        setShowLogin(false);
+      }}
+    />
+  );
+}
+
+if (showRegisteredUsers) {
+  const registeredUsers =
+    JSON.parse(localStorage.getItem("bankShieldUsers")) || [];
+
+  return (
+    <div className="registered-users-page">
+
+      <h1>👥 Registered Users</h1>
+
+      <p>
+        View users who have registered for the BankShield application.
+      </p>
+
+      <div className="registered-users-card">
+
+        <h2>👥 User List</h2>
+
+        {registeredUsers.length === 0 ? (
+          <p>No registered users found.</p>
+        ) : (
+          <div className="users-table">
+
+            <div className="user-row user-header">
+              <span>Name</span>
+              <span>Email</span>
+              <span>Registered</span>
+              <span>Last Login</span>
+              <span>Login Count</span>
+            </div>
+
+            {registeredUsers.map((user, index) => (
+              <div className="user-row" key={index}>
+                <span>{user.name}</span>
+                <span>{user.email}</span>
+                <span>{user.registeredAt || "N/A"}</span>
+                <span>{user.lastLogin || "Not logged in"}</span>
+                <span>{user.loginCount || 0}</span>
+              </div>
+            ))}
+
+          </div>
+        )}
+
+      </div>
+
+      <button
+        className="back-dashboard-btn"
+        onClick={() => setShowRegisteredUsers(false)}
+      >
+        ← Back to Dashboard
+      </button>
+
+    </div>
+  );
+}
+
   if (showTips){
   return (
     <div className="tips-page">
@@ -899,6 +972,19 @@ if (showEmergencyHelp) {
     Start Scan
   </button>
 </div>
+
+{userType === "admin" && (
+  <div className="card">
+    <div className="icon">👥</div>
+    <h3>Registered Users</h3>
+    <p>
+      View users registered with BankShield.
+    </p>
+    <button onClick={() => setShowRegisteredUsers(true)}>
+      View Users
+    </button>
+  </div>
+)}
 
         </div>
       </main>

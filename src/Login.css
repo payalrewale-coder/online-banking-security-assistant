@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.login-page {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #f4f7fb;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.login-header {
+  width: 100%;
+  text-align: center;
+  padding: 45px 20px 30px;
+}
+
+.login-header h1 {
+  color: #17365d;
+  font-size: 34px;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: #555555;
+  font-size: 17px;
+}
+
+.login-container {
+  width: 850px;
+  max-width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: #ffffff;
+  border: 1px solid #d9e0e8;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.login-box {
+  padding: 35px 40px;
+  min-height: 420px;
+}
+
+.user-box {
+  border-right: 1px solid #d9e0e8;
+}
+
+.login-box h2 {
+  text-align: center;
+  color: #17365d;
+  font-size: 21px;
+  margin-bottom: 30px;
+}
+
+.login-box label {
+  display: block;
+  color: #333333;
+  font-size: 15px;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+
+.login-box input {
+  width: 100%;
+  height: 45px;
+  padding: 0 13px;
+  border: 1px solid #cbd3dc;
+  border-radius: 6px;
+  font-size: 15px;
+  outline: none;
+}
+
+.login-box input:focus {
+  border-color: #17365d;
+}
+
+.login-button {
+  width: 100%;
+  height: 45px;
+  margin-top: 30px;
+  border: none;
+  border-radius: 6px;
+  background-color: #17365d;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-button:hover {
+  background-color: #0f2847;
+}
+
+.create-account {
+  display: block;
+  margin: 22px auto 0;
+  border: none;
+  background: none;
+  color: #17365d;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.create-account:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .login-container {
+    grid-template-columns: 1fr;
+  }
+
+  .user-box {
+    border-right: none;
+    border-bottom: 1px solid #d9e0e8;
+  }
+
+  .login-box {
+    min-height: auto;
+  }
+}
